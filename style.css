@@ -1,0 +1,140 @@
+body {
+    box-sizing: border-box;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.circle-container {
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+    box-shadow: 0 5px 30px 5px rgba(77, 75, 75, 0.5);
+    padding: 1rem 2rem;
+}
+#circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: wheat;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+.button-container div {
+    margin: auto;
+}
+h3 {
+    color: white;
+    font-size: 20px;
+}
+.button {
+    display: flex;
+}
+.button button {
+    font-size: large;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem 1rem 0;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+button:hover {
+    background: gold;
+    border: 2px solid rgb(80, 79, 79);
+}
+.start {
+    background-color: lightgreen;
+}
+.stop {
+    background-color: rgb(245, 181, 181);
+}
+button:active {
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+}
+#circle:hover {
+    outline: 4px solid skyblue ;
+}
+@media  screen and (max-width:768px) {
+    #circle {
+        width: 150px;
+        height: 150px;
+    } 
+    .circle-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 30px;
+    }  
+    h3 {
+        font-size: 14px;
+    }
+    .button button {
+        font-size: small;
+        padding: 0.2rem .7rem;
+    }
+       
+}
+@media  screen and (max-width:540px) {
+    #circle {
+        width: 150px;
+        height: 150px;
+    } 
+    .circle-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        row-gap: 25px;
+    }       
+}
+@media  screen and (max-width:450px) {
+    .button-container{
+        padding: 0 1.2rem;
+    }
+    #circle {
+        width: 100px;
+        height: 100px;
+    } 
+    .circle-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5px;
+        row-gap: 15px;
+    }  
+    h3 {
+        font-size: 12px;
+    }
+    .button button {
+        font-size: small;
+        padding: 0.2rem .7rem;
+    }     
+}
+@media  screen and (max-width:320px) {
+    #circle {
+        width: 80px;
+        height: 80px;
+    } 
+    .circle-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5px;
+        row-gap: 15px;
+    }       
+}
